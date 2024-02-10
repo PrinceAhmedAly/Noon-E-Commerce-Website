@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noon Search Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;700&family=Noto+Kufi+Arabic:wght@400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar d-flex justify-content-center align-items-center">
+
+        <div class="container-fluid row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-5">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/noon-logo-en.svg" alt="Logo" width="90" height="24" class="">
+
+                    <img src="assets/Flag_of_Egypt.svg.png" alt="Logo" width="50" height="auto" class="ml-4">
+                </a>
+            </div>
+
+            <div class="col-lg-5 col-md-3 col-sm-8 col-7">
+                <form class="" role="search">
+                    <input class="form-control me-2" type="search" placeholder="What are you looking for?"
+                        aria-label="Search">
+
+                </form>
+            </div>
+
+            <div class="col-lg-5 col-md-6 d-none d-md-block mt-2">
+
+                <ul class=" m-auto d-flex justify-content-center align-items-center">
+
+                    <span class="d-block mx-2">
+                        العربية
+                    </span>
+
+                    <li class="d-flex left-border">
+                        <a class="text-decoration-none px-1 nav-link-color nav-li-border fw-bold" href="">Log in<i
+                                class="ps-1 fa-regular fa-user"></i></a>
+                    </li>
+
+                    <li class="d-flex left-border">
+                        <a class="text-decoration-none nav-link-color nav-li-border fw-bold px-1" href="">Wishlist<i
+                                class="ps-1 fa-regular fa-heart position-relative">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                    6
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </i>
+                        </a>
+                    </li>
+
+                    <li class="d-flex left-border">
+                        <a class="text-decoration-none nav-link-color nav-li-border fw-bold px-1" href="">Cart<i
+                                class="ps-1 fa-solid fa-cart-shopping position-relative">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                    6
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- items nav links -->
+    <div class="nav-links d-none d-md-block">
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-2 d-flex justify-content-left align-items-center py-2"
+                    style="border-right: 1px solid #DDD; font-size: 1.1vw; font-weight: bold;">
+                    <a href="" class="nav-link">
+                        ALL PRODUCTS
+                        <span style="margin-left: 10px;">
+                            <i class="fa-solid fa-sort-down"></i>
+                        </span>
+
+                    </a>
+                </div>
+
+                <div class="col-10 d-flex justify-content-left align-items-center main-links">
+                    <a href="#" class="nav-link item-link p-2">Electronics</a>
+                    <a href="#" class="nav-link p-2">Mobile</a>
+                    <a href="#" class="nav-link  p-2">Men</a>
+                    <a href="#" class="nav-link p-2">Women</a>
+                    <a href="#" class="nav-link p-2">Home</a>
+                    <a href="#" class="nav-link p-2">Beauy and Healthy</a>
+                    <a href="#" class="nav-link p-2">Baby and Toys</a>
+                    <a href="#" class="nav-link p-2">Super Market</a>
+                    <a href="#" class="nav-link p-2">Sell on Noon</a>
+                    <a href="#" class="nav-link p-2" style="color: red;">Deals</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Home</li>
+                        <li class="breadcrumb-item">Electronics & Mobiles</li>
+                        <li class="breadcrumb-item active" aria-current="page">Laptop</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="container-fluid mt-6">
+        <div class="row">
+            <!-- Sidebar -->
+            <div id="checkbox-side" class="col-lg-2 col-md-4">
+                <div>
+                  <p class="d-inline-flex gap-1">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseOne" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-square-plus"></i>&MediumSpace;&MediumSpace;Electronics
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseOne">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                      user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="d-inline-flex gap-1">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseTwo" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-square-plus"></i>&MediumSpace;&MediumSpace;Mobiles
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseTwo">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                      user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="d-inline-flex gap-1">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseThree" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-square-plus"></i>&MediumSpace;&MediumSpace;Grocery
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseThree">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                      user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="d-inline-flex gap-1">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseFore" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-square-plus"></i>&MediumSpace;&MediumSpace;Beauty & Health
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseFore">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                      user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="d-inline-flex gap-1">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseFive" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-square-plus"></i>&MediumSpace;&MediumSpace;Fashion
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseFive">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                      user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="d-inline-flex gap-1">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseSix" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-square-plus"></i>&MediumSpace;&MediumSpace;Home & Kitchen
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseSix">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                      user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="d-inline-flex gap-1">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseSeven" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-square-plus"></i>&MediumSpace;&MediumSpace;Sports & Fitness
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseSeven">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                      user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="d-inline-flex gap-1">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseEight" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-square-plus"></i>&MediumSpace;&MediumSpace;Products
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseEight">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                      user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="d-inline-flex gap-1">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseNine" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-square-plus"></i>&MediumSpace;&MediumSpace;Automotive
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseNine">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                      user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="d-inline-flex gap-1">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseTen" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      <i class="fa-regular fa-square-plus"></i>&MediumSpace;&MediumSpace;Books
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseTen">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                      user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <!-- sidebar-container END -->
+
+            <!-- Search Results Section -->
+            <div class="col-md-10">
+                <section class="search-results">
+                    <div class="container">
+                        <div class="container mt-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Showing <strong>1-20</strong> of <strong>500</strong> results</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="sort-by">Sort By:</label>
+                                                <select class="form-control" id="sort-by">
+                                                    <option value="default">Default</option>
+                                                    <option value="price-low-high">Price: Low to High</option>
+                                                    <option value="price-high-low">Price: High to Low</option>
+                                                    <option value="popularity">Popularity</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="show">Show:</label>
+                                                <select class="form-control" id="show">
+                                                    <option value="20">20</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Product Cards -->
+                        <div class="row mt-4" id="card">
+                            <div class="row">
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-1.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-2.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-3.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-4.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-1.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-2.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-3.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-4.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-1.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-2.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-3.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-4.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-1.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-2.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-3.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-4.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-1.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-2.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-3.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-4.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-1.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-2.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-3.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-4.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-1.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-2.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-3.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-4.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-1.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-2.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-3.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-4.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-1.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-2.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-3.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="nav-rec-cards">
+                                        <div class="card-img">
+                                            <img src="assets/rec-card-4.avif" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-text">
+                                                Apple iPhone 14 Pro Max 256GB Deep
+                                            </div>
+                                            <div class="card-price ">
+                                                <span style="font-size: 10px; margin-right: 5px;">AED </span><span
+                                                    style="font-size: 18px; font-weight: 700;">43990.00</span>
+                                            </div>
+                                            <div class="card-off">
+                                                <span
+                                                    style="text-decoration: line-through solid black; font-size: 10px; margin-right: 5px; ">5099</span>
+                                                <span style="font-weight: 700; color:green;"> 13% off</span>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex justify-content-between align-items-center mt-lg-5">
+                                                <div class="card-express">
+                                                    <img src="assets/express.svg" alt="">
+                                                </div>
+                                                <div class="card-ratting">
+                                                    4.5 <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more product cards here -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- pageNumber -->
+            <div class="container mt-5">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- sperator -->
+        </div>
+        <div class="line-hr">
+            <hr>
+        </div>
+        <!-- footer -->
+        <section class="container-fluid">
+            <div class="footer row justify-content-center align-items-center">
+                <div class="footer-box-intro col-md-12">
+                    <div class="box-1">
+                        <h2 class="heading">Superior online shopping in the Egypt</h2>
+                        <p class="short">As the leading destination for <u class="">online shopping in the Egypt</u>,
+                            noon
+                            has
+                            everything you need under one roof. Whether you’re shopping for the latest <a
+                                href="https://www.noon.com/uae-en/electronics-and-mobiles/" target="_blank"
+                                class="">electronic
+                                products</a>, fashion, homeware, <a href="https://www.noon.com/uae-en/baby-products/"
+                                target="_blank" class="">products for kids and babies</a>,
+                            <u>books</u> and stationery, sports and health essentials, <a
+                                href="https://www.noon.com/uae-en/beauty-and-health/beauty/" target="_blank">beauty
+                                products</a>, or groceries, we have millions of products in the noon
+                            <u>Egypt store</u>. As a <u>customer-centric</u> online store, we make it easier to <u>buy
+                                online</u>
+                            with flexible payment plans that help you save, along with regular sales across our
+                            extensive
+                            product range, gift cards, wishlists, our <a
+                                href="https://www.noon.com/uae-en/mashreq-card/" target="_blank">exclusive Mashreq VIP
+                                card</a>, our easy-to-use shopping app, and so much
+                            more. <br> At noon, we work hard to deliver the very best experience for our customers. We
+                            deliver
+                            to Dubai, Abu Dhabi and all other cities in the Egypt. As a superstore with multiple
+                            departments
+                            and
+                            exceptional customer service, we offer so much more than your average online shop. We go
+                            above
+                            and
+                            beyond to make your shopping experience as stress-free as possible, with products that offer
+                            <u>long-term</u> quality. Save time and effort, and enjoy one-stop shopping from the comfort
+                            of
+                            your
+                            home. Shop online and get free shipping on orders over a set amount.
+                        </p>
+                    </div>
+                    <div class="box-1">
+                        <h2 class="heading">Shop the best products &amp; brands at noon Egypt</h2>
+                        <p class="short">You’ll find a massive variety of products from <u>top brands</u> at <u>noon
+                                Egypt</u>.
+                            Our electronics department has the <a
+                                href="https://www.noon.com/uae-en/electronics-and-mobiles/mobiles-and-accessories/mobiles-20905/"
+                                target="_blank">latest mobile phones</a>, along with tablets, mobile accessories, <a
+                                href="https://www.noon.com/uae-en/electronics-and-mobiles/computers-and-accessories/laptops/"
+                                target="_blank">laptops</a>, <u>wearable technology</u> such as smartwatches and other
+                            <u>wearable devices</u>, <a
+                                href="https://www.noon.com/uae-en/electronics-and-mobiles/portable-audio-and-video/headphones-24056/"
+                                target="_blank">headphones</a> (in-<u>ear</u>, <u>wireless</u> and <u
+                                class="">noise-cancelling</u>), audiovisual gear, a selection of <a
+                                href="https://www.noon.com/uae-en/electronics-and-mobiles/camera-and-photo-16165/"
+                                target="_blank" class="">cameras</a>, televisions, <a
+                                href="https://www.noon.com/uae-en/electronics-and-mobiles/video-games-10181/gaming-console/"
+                                target="_blank">video game consoles</a> such as PC and Xbox controllers, and <a
+                                href="https://www.noon.com/uae-en/electronics-and-mobiles/video-games-10181/games-34004/"
+                                target="_blank">video games</a>. We have products from Samsung, Xiaomi, Sony, <a
+                                href="https://www.noon.com/uae-en/hp/" target="_blank">HP</a>, Dell, Huawei, Lenovo, <a
+                                href="https://www.noon.com/uae-en/apple/" target="_blank" class="">Apple</a>, and many
+                            other
+                            leading tech brands. <br> In our home and kitchen department, you’ll find a massive variety
+                            of
+                            products from Home Box, Fashionhome, Pan Emirates and other brands. We have a large variety
+                            of
+                            home
+                            appliances in the store, from large appliances such as fridges and washing machines to small
+                            appliances such as air fryers, coffee makers, irons, heaters, and more. Our <a
+                                href="https://www.noon.com/uae-en/home-and-kitchen/furniture-10180/"
+                                target="_blank">furniture
+                                range</a> includes beds, sofas and couches, chairs, tables, and other furniture. The
+                            home
+                            and
+                            kitchen department includes everyday essentials such as food storage, cookware, bedding, <a
+                                href="https://www.noon.com/uae-en/tools-and-home-improvement/" target="_blank">home
+                                improvement
+                                supplies</a> and tools, <a
+                                href="https://www.noon.com/uae-en/home-and-kitchen/home-decor/" target="_blank">home
+                                decor</a>, lighting, and many other must-haves for your home. Our
+                            <u>automotive</u> department has everything you need to keep your car maintained. <br> Our
+                            <u>Egypt
+                                beauty store</u> features a <u>wide range</u> of products - hair care and personal care
+                            products, fragrances and <a
+                                href="https://www.noon.com/uae-en/beauty-and-health/beauty/fragrance/"
+                                target="_blank">perfumes</a>, cosmetics, skincare products, grooming products, <a
+                                href="https://www.noon.com/uae-en/beauty-and-health/beauty/personal-care-16343/bath-and-body/"
+                                target="_blank">bath and body products</a>, and more. This range includes products from
+                            leading
+                            brands, including Calvin Klein, Roberto Cavalli, L’Oreal Paris and many others. <br> Shop
+                            fashion
+                            online to find a <u>wide range</u> of clothing, shoes and accessories for men, women and
+                            kids.
+                            Our
+                            <u>Egypt women’s clothing store</u> includes apparel from top brands such as Tommy Hilfiger,
+                            Adidas,
+                            Vero Moda, Sketchers and others. Our <a
+                                href="https://www.noon.com/uae-en/fashion/women-31229/" target="_blank">women’s fashion
+                                department</a> includes sportswear, dresses, traditional and
+                            ethnic clothing, dresses, tops, shoes, handbags, accessories, and everything else you need
+                            to
+                            look
+                            your best. Our <a href="https://www.noon.com/uae-en/fashion/men-31225/"
+                                target="_blank">Egypt
+                                men’s
+                                clothing store</a> features fashion, accessories, and footwear from Nike, Puma, Adidas,
+                            Tommy
+                            Hilfiger and other leading fashion brands. Our accessories range includes watches, eyewear,
+                            handbags, and other style essentials. You will find plenty of clothing, accessories and
+                            shoes
+                            for
+                            boys and girls of all ages in our <u>Egypt kids’ clothing store</u>. <a
+                                href="https://www.noon.com/uae-en/fashion/" target="_blank">Shop clothes online</a> to
+                            view
+                            our
+                            full collections. <br> For little ones, we have a variety of baby and kids products in the
+                            <u>noon
+                                Egypt shop</u>, from leading brands such as Intex, Lego, Barbie, Nerf and many others.
+                            Shop
+                            our
+                            range of <a href="https://www.noon.com/uae-en/toys-and-games/" target="_blank">toys for
+                                kids</a>
+                            of
+                            every age to find fun, interactive games, <u>card games</u>, outdoor play equipment,
+                            scooters,
+                            and
+                            other things to keep your child busy. Our baby product selection features everything from
+                            diapers to
+                            baby transport, nursing and feeding products, <a
+                                href="https://www.noon.com/uae-en/toys-and-games/baby-and-toddler-toys/"
+                                target="_blank">baby
+                                toys</a>, and more. <br> Get active with our huge selection of <a
+                                href="https://www.noon.com/uae-en/sports-and-outdoors/" target="_blank">sporting and
+                                outdoor
+                                products</a> from Muscletech, Skyland, Sparnod Fitness, Everlast and other brands. This
+                            department has everything from fitness and training equipment, <a
+                                href="https://www.noon.com/uae-en/sports-and-outdoors/sports-nutrition-sports/"
+                                target="_blank">sports and health nutrition</a>, cycling essentials, and specialised
+                            sporting
+                            equipment for boxing, yoga, swimming, and other sports. <br> <u>Online food shopping in
+                                Egypt</u> is
+                            simple, thanks to noon Grocery - the fastest, simplest way to get great deals on food
+                            essentials.
+                            From fresh food to <a
+                                href="https://www.noon.com/uae-en/home-and-kitchen/storage-and-organisation/kitchen-storage-and-organisation/"
+                                target="_blank">pantry items</a>, cooking essentials, household items, <a
+                                href="https://www.noon.com/uae-en/grocery-store/home-care-and-cleaning/"
+                                target="_blank">cleaning and laundry products</a>, and more, we offer fast delivery to
+                            your
+                            door. We have products from our in-house noon brand as well as quality imported brands.
+                        </p>
+                    </div>
+                    <div class="box-1">
+                        <h2 class="heading">Hassle-free Egypt online shopping</h2>
+                        <p class="short">When you <u class="">buy online</u> at noon, you will always have peace of mind
+                            knowing
+                            that you are getting the best level of service. We take the hassle out of <u>online shopping
+                                in
+                                Abu
+                                Dhabi and Dubai</u>, with a number of features and flexible payment plans that make
+                            shopping
+                            simpler, faster, and better. <a href="https://www.noon.com/uae-en/bnpl-noon/"
+                                target="_blank">Our
+                                Buy Now, Pay Later</a> plans include <a href="https://www.noon.com/uae-en/tabby-noon/"
+                                target="_blank">Tabby</a>, with orders split over 4 payments, and <a
+                                href="https://www.noon.com/uae-en/tamara-noon/" target="_blank">Tamara</a>, with orders
+                            split
+                            over 3 payments. Both plans are interest-free. We accept credit cards and debit cards from
+                            Emirates
+                            NBD, FAB bank, Mashreq bank, ADCIB, and ADIB, and cash on delivery. For even more
+                            convenience,
+                            we
+                            have a No-Cost EMI. We have a 15-day return policy that takes even more stress out of
+                            shopping.
+                            <br>
+                            Set up a wishlist quickly and easily, and share your list with friends and family. Our
+                            website
+                            is
+                            easy to use. Shop by department or sub-category to find what you need. You can also use our
+                            advanced
+                            search features to filter products according to price and other criteria. Get the same
+                            shopping
+                            experience and download the noon app - available on <a
+                                href="https://apps.apple.com/us/app/noon-shopping-%D9%86%D9%88%D9%86-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/id1269038866"
+                                target="_blank">App Store</a> and <a
+                                href="https://play.google.com/store/apps/details?id=com.noon.buyerapp&amp;hl=en&amp;gl=US"
+                                target="_blank">Play Store</a>. This app has all the features of the noon online store,
+                            along
+                            with exclusive benefits, regular deals, and more. <br> However you choose to shop online in
+                            Dubai,
+                            Abu Dhabi and other cities across the UAE, noon makes shopping easy. Say goodbye to crowded
+                            malls,
+                            long lines and stressful in-store shopping for good. Get all the benefits of shopping from
+                            home
+                            when
+                            you shop online in Abu Dhabi and Dubai. To get started, sign up for your account, set your
+                            delivery
+                            address, and then choose your payment option. Browse our departments and add products to
+                            your
+                            cart.
+                            Once you’re finished shopping, complete the checkout process. We’ll take over from there,
+                            preparing
+                            your order for delivery. Your order will then be shipped straight to your door. <br> Sign up
+                            for
+                            your account at the <u>noon UAE online shop</u> now to start shopping. Happy shopping!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="line-hr">
+                    <hr>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-box-help">
+                                <div class="box-2">
+                                    <p>We're Always Here To Help</p>
+                                    <h2>Reach out to us through any of these support channels</h2>
+                                </div>
+                                <div class="footer-box-help-icons">
+                                    <div class="col-md-6">
+                                        <div class="box-2">
+                                            <div class="box-2-1">
+                                                <div class="box-2-icon">
+                                                    <i class="fa-solid fa-circle-info"></i>
+                                                </div>
+                                                <div class="box-2-text">
+                                                    <h2>HELP CENTER</h2>help.noon.com
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box-2">
+                                            <div class="box-2-1">
+                                                <div class="box-2-icon">
+                                                    <i class="fa-regular fa-envelope"></i>
+                                                </div>
+                                                <div class="box-2-text">
+                                                    <h2>EMAIL SUPPORT</h2>care@noon.com
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-hr">
+                    <hr>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-box-items row">
+                                <div class="box-3 col-md-2">
+                                    <ul>
+                                        <li>
+                                            <h2>ELECTRONICS</h2>
+                                        </li>
+                                        <li><a href="">Mobile</a></li>
+                                        <li><a href="">Tablets</a></li>
+                                        <li><a href="">Laptops</a></li>
+                                        <li><a href="">Home appliances</a></li>
+                                        <li><a href="">Camera, photo & Vedios</a></li>
+                                        <li><a href="">Televisions</a></li>
+                                        <li><a href="">Headphones</a></li>
+                                        <li><a href="">Video games</a></li>
+                                    </ul>
+                                </div>
+                                <div class="box-3 col-md-1">
+                                    <ul>
+                                        <li>
+                                            <h2>FASHION</h2>
+                                        </li>
+                                        <li><a href="">Women's Fashion</a></li>
+                                        <li><a href="">Men's Fashion</a></li>
+                                        <li><a href="">Girl's Fashion</a></li>
+                                        <li><a href="">Boys's Fashion</a></li>
+                                        <li><a href="">Watches</a></li>
+                                        <li><a href="">Jewellary</a></li>
+                                        <li><a href="">Women's handbags</a></li>
+                                        <li><a href="">Men's Eyewere</a></li>
+                                    </ul>
+                                </div>
+                                <div class="box-3 col-md-2">
+                                    <ul>
+                                        <li>
+                                            <h2>HOME AND KITCHEN</h2>
+                                        </li>
+                                        <li><a href="">Bath</a></li>
+                                        <li><a href="">Home Decor</a></li>
+                                        <li><a href="">Kitchen and Dining</a></li>
+                                        <li><a href="">Tools</a></li>
+                                        <li><a href="">Audio & Video</a></li>
+                                        <li><a href="">Furniture</a></li>
+                                        <li><a href="">Patio, Lawn</a></li>
+                                        <li><a href="">Pet Supplies</a></li>
+                                    </ul>
+                                </div>
+                                <div class="box-3 col-md-1">
+                                    <ul>
+                                        <li>
+                                            <h2>BEAUTY</h2>
+                                        </li>
+                                        <li><a href="">Makeup</a></li>
+                                        <li><a href="">Fragrance</a></li>
+                                        <li><a href="">Skin Care</a></li>
+                                        <li><a href="">Hair Care</a></li>
+                                        <li><a href="">Bath & Body</a></li>
+                                        <li><a href="">Electronic Beauty Tool</a></li>
+                                        <li><a href="">Men's Groming</a></li>
+                                        <li><a href="">Hair Care Essentials</a></li>
+                                    </ul>
+                                </div>
+                                <div class="box-3 col-md-2">
+                                    <ul>
+                                        <li>
+                                            <h2>BABY & TOYS</h2>
+                                        </li>
+                                        <li><a href="">Baby Gear</a></li>
+                                        <li><a href="">Toys & Games</a></li>
+                                        <li><a href="">Diapers & Wipes</a></li>
+                                        <li><a href="">Baby Clothing</a></li>
+                                        <li><a href="">Nursery</a></li>
+                                        <li><a href="">Feeding</a></li>
+                                        <li><a href="">Baby Health & Safety</a></li>
+                                        <li><a href="">Baby Bath & Skincare</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="box-3 col-md-2">
+                                    <ul>
+                                        <li>
+                                            <h2>TOP BRANDS</h2>
+                                        </li>
+                                        <li><a href="">Pampers</a></li>
+                                        <li><a href="">Apple</a></li>
+                                        <li><a href="">Nike</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Tefal</a></li>
+                                        <li><a href="">L'Oréal Paris</a></li>
+                                        <li><a href="">Skechers</a></li>
+                                        <li><a href="">BLACK+DECKER</a></li>
+                                        <li><a href="">Noon One</a></li>
+                                        <li><a href="">Back To School</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="footer-box-links mt-5">
+                                <div class="box-4 col-md-6">
+                                    <h2>SHOP ON THE GO</h2>
+                                    <div class="box-4-1">
+                                        <img src="https://f.nooncdn.com/s/app/com/common/images/logos/app-store.svg"
+                                            alt="App Store" loading="lazy" class="sc-ec94e93f-16 kXFkQM">
+                                        <img src="https://f.nooncdn.com/s/app/com/common/images/logos/google-play.svg"
+                                            alt="Google Play" loading="lazy" class="sc-ec94e93f-16 kXFkQM">
+                                    </div>
+                                </div>
+                                <div class="box-4 col-md-6">
+                                    <h2>CONNECT WITH US</h2>
+                                    <div class="box-4-1">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-hr">
+                        <hr>
+                    </div>
+
+                    <div class="footer-rights">
+                        <ul>
+                            <li><a href="">©️ 2024 noon. All rights Reserved</a></li>
+                            <li><img src="https://f.nooncdn.com/s/app/com/noon/design-system/payment-methods-v2/card-mastercard.svg"
+                                    alt=""></li>
+                            <li><img src="https://f.nooncdn.com/s/app/com/noon/design-system/payment-methods-v2/card-visa.svg"
+                                    alt=""></li>
+                            <li><img src="https://f.nooncdn.com/s/app/com/noon/design-system/payment-methods-v2/tabby.svg"
+                                    alt=""></li>
+                            <li><img src="https://f.nooncdn.com/s/app/com/noon/design-system/payment-methods-v2/tamara-en.svg"
+                                    alt=""></li>
+                            <li><img src="https://f.nooncdn.com/s/app/com/noon/design-system/payment-methods-v2/card-amex.svg"
+                                    alt=""></li>
+                            <li><img src="https://f.nooncdn.com/s/app/com/noon/design-system/payment-methods-v2/cod-en.svg"
+                                    alt=""></li>
+                            <li><a href="">Terms of Use</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Intellectual Property Right</a></li>
+                            <li><a href="">Terms of Sale</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Country</a></li>
+                            <li><a href="">Egypt</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
